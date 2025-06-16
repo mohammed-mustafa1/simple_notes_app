@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: double.infinity,
                       padding: EdgeInsets.all(16),
                       decoration: BoxDecoration(
-                        color: Colors.green,
+                        color: Color(notes[index].color),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Column(

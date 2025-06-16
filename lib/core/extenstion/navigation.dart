@@ -7,7 +7,10 @@ extension Navigation on BuildContext {
   }
 
   void pushReplaceTo(BuildContext context, Widget widget) {
-    Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => widget));
+    Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(builder: (context) => widget),
+      (route) => false,
+    );
   }
 }
