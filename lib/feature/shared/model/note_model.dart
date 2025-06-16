@@ -9,10 +9,13 @@ class NoteModel {
   final String title;
   @HiveField(2)
   final String description;
+  @HiveField(3)
+  final int color;
 
   NoteModel({
     required this.id,
     required this.title,
     required this.description,
+    required this.color,
   });
 }
